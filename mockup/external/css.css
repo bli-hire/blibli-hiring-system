@@ -44,17 +44,7 @@ h4 {
   font-size: 64px;
   font-style: normal;
   font-weight: normal;
-  height: 104px;
-  line-height: 64px;
-  margin-bottom: 0px;
-  margin-left: 197.4375px;
-  margin-right: 197.4375px;
-  margin-top: 0px;
   opacity: 0.699999988079071;
-  padding-bottom: 20px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 20px;
   text-align: center;
 }
 
@@ -79,16 +69,14 @@ h4 {
   font-weight: normal;
   height: 50px;
   line-height: 30px;
+  width: 200px;
+  margin: auto;
   margin-bottom: 10px;
-  margin-left: 460.6875px;
-  margin-right: 460.6875px;
-  margin-top: 10px;
   padding-bottom: 10px;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 10px;
   text-align: center;
-  width: 394.890625px;
 }
 
 .lookJob{
@@ -111,13 +99,7 @@ h4 {
   font-style: normal;
   font-weight: normal;
   height: 50px;
-  line-height: 30px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 10px;
   text-align: center;
-  width: 394.890625px;
 
 }
 .lookJob a{
