@@ -99,7 +99,13 @@ h4 {
   font-style: normal;
   font-weight: normal;
   height: 50px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
   text-align: center;
+  width: 394.890625px;
 
 }
 .lookJob a{
