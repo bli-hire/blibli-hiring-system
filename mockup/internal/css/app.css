@@ -19,7 +19,7 @@ h4 {
 }
 .jumbotron {
     /*background-color: rgb(255, 255, 255);*/
-    background-image: url('gambar.jpg');
+    background-image: url('../images/gambar.jpg');
     color: rgb(0, 149, 218);
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -91,35 +91,6 @@ h4 {
   width: 394.890625px;
 }
 
-.lookJob{
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-color: rgb(233, 133, 29);
-  background-image: none;
-  background-origin: padding-box;
-  background-size: auto;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  cursor: default;
-  display: block;
-  font-family: Lato, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: normal;
-  height: 50px;
-  line-height: 30px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 10px;
-  text-align: center;
-  width: 394.890625px;
-
-}
 .lookJob a{
   background-attachment: scroll;
   background-clip: border-box;
@@ -282,7 +253,6 @@ footer .glyphicon {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
-
   }
   .btn-lg {
       width: 100%;
@@ -298,7 +268,3 @@ footer .glyphicon {
 .logo{
   height: 100px;
 }
-.searching{
-	margin: center;
-}
-
