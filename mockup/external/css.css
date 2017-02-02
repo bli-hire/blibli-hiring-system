@@ -253,6 +253,7 @@ footer .glyphicon {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
+
   }
   .btn-lg {
       width: 100%;
@@ -268,3 +269,7 @@ footer .glyphicon {
 .logo{
   height: 100px;
 }
+.searching{
+	margin: center;
+}
+
