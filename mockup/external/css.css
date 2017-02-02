@@ -144,6 +144,17 @@ h4 {
 .container-fluid {
     padding: 60px 50px;
 }
+.container-stt{
+	position:center;
+	
+	width: 400px;
+	margin: auto;
+}
+.container-track{
+	padding: 60px 50px;
+	margin: auto;
+	position:center;
+}
 .bg-grey {
     background-color: #f6f6f6;
 }
