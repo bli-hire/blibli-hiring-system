@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   </head>
 
-  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <body ng-controller="InternalHomeController as homeCtrl">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -21,35 +21,23 @@
           </button>
           <a href="#myPage"><img class="logo" src="images/New-Blibli-Logo.png" alt=""></a>
         </div>
+
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#pricing">PRICING</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li ng-class= "{ active: isSelected(1) }" >
+              <a href="#1" ng-click="homeCtrl.selectTab(1)">LOGIN</a>
+            </li>
+            <li ng-class= "{ active: isSelected(2) }" >
+              <a href="#2" ng-click="homeCtrl.selectTab(2)">REGISTER</a>
+            </li>
           </ul>
         </div>
+
+        <div ng-show="homeCtrl.isSelected(1)" ng-include="'login.html'"></div>
+        
+
       </div>
     </nav>
-
-    <div class="jumbotron text-center">
-      <br>
-      <h1>You Can Make a Difference</h1>
-      <!-- <p>We specialize in blablabla</p> -->
-      <div class="lookJob">
-        <a href="#">Search for a job</a>
-      </div>
-
-      <form>
-        <div class="input-group">
-          <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-          <div class="input-group-btn">
-            <button type="button" class="btn btn-info">Subscribe</button>
-          </div>
-        </div>
-      </form>
-    </div>
   </body>
 
   <script type="text/javascript" src="js/vendor/angular.js"></script>
@@ -57,4 +45,7 @@
   <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/apps/app.js"></script>
+  <script type="text/javascript" src="js/apps/controller/InternalHomeController.js"></script>
+  <script type="text/javascript" src="js/apps/controller/InternalLoginController.js"></script>
+  <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
 </html>
