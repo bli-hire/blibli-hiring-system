@@ -1,1 +1,3 @@
-angular.module('InternalApp',[]);
+angular.module('InternalApp',[
+	'ngStorage',
+	]);
