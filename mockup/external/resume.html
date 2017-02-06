@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#myPage"><img class="logo" src="New-Blibli-Logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#jobs">JOBS</a></li>
+            <li><a href="#tracks">TRACK</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <br>
+        <br>
+        <h2>Resume</h2>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="title">Title:</label>
+            <div class="col-sm-10">
+                <select class="form-control" id="sel1">
+                  <option value="" disabled selected>Silahkan Pilih</option>
+                  <option>Professionals</option>
+                  <option>Students and Graduates</option>
+                </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Job Title:</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="sel2">
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="Talent Acquisition Specialist">Talent Acquisition Specialist</option>
+                <option value="Sr. System Development Engineer">Sr. System Development Engineer</option>
+                <option value="Mobile Development Engineer">Mobile Development Engineer</option>
+                <option value="Technical Support Staff">Technical Support Staff</option>
+                <option value="System Development Engineer Testing">System Development Engineer Testing</option>
+                <option value="System Development Engineer">System Development Engineer</option>
+                <option value="Finance Administrator">Finance Administrator</option>
+                <option value="Business Development Administrator">Business Development Administrator</option>
+                <option value="Process Improvement and Reengineering Specialist">Process Improvement and Reengineering Specialist</option>
+                <option value="Assistant Merchandiser">Assistant Merchandiser</option>
+                <option value="System Development Engineer">System Development Engineer</option>
+                <option value="Sr. Fleet Management Specialist">Sr. Fleet Management Specialist</option>
+                <option value="Fleet Management Specialist">Fleet Management Specialist</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="nama">Nama Lengkap:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email address:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="telp">Telp / Handphone:</label>
+            <div class="col-sm-10">
+              <input type="telp" class="form-control" id="telp" placeholder="087xxx">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="cv">Upload CV (pdf):</label>
+            <div class="col-sm-10">
+              <label class="btn btn-default btn-file">
+                Browse <input type="file" style="display: none;">
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="comment">Comment:</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
