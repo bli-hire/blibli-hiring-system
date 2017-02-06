@@ -301,3 +301,75 @@ footer .glyphicon {
 	margin: center;
 }
 
+
+.respect p.blinote span {
+    color: #0096d9;
+    margin-left: 20px;
+    font-size: 28px;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Inherited from p.blinote
+.respect p.blinote {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 0px;
+}
+
+
+
+
+
+.respect .batas {
+    background: #d8d8d8;
+    width: 3px;
+    height: 870px;
+    margin: 0 auto;
+    display: block;
+}
+
+.respect p.blinote {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 0px;
+}
+
+#slide1_controls span {
+    cursor: pointer;
+    color: #0096d9;
+    line-height: 30px;
+    padding: 0;
+    margin: 0 10px;
+    font-size: 48px;
+    font-weight: 300;
+    color: rgb(110, 107, 107);
+    border-bottom-style: none;
+}
+p#slide1_controls {
+    text-align: left;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.row .column, .row .columns {
+    padding-left: 1.250em;
+    padding-right: 1.250em;
+}
+.column, .columns {
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    width: 100%;
+    float: left;
+}
+.medium-12 {
+    width: 100%;
+}
+
+
