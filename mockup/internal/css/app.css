@@ -345,3 +345,7 @@ span.glyphicon.glyphicon-refresh{
   margin-top:72px;
   margin-left:-59px;
 }
+
+.active{
+  background-color:rgb(255, 255, 255);
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html ng-app="InternalApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:-9px; margin-bottom:-20px;">
+      <div class="container-fullwidth well well-sm" style="margin-bottom: -20px;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./dashboard-department_FPK.html"><img class="newLogo" src="images/New-Blibli-Logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#contact">MPP</a></li>
+            <li><a href="#contact" class="active">FPK</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#user">User</a></li>
+            <li><a href="#contact">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="col-md-2">
+      <div class="navbar navbar-inverse navbar-fixed-left">
+        <ul class="nav navbar-nav">
+         <li><a href="./dashboard-department_FPK.html">Dasboard</a></li>
+         <li><a href="./dashboard-department_newFPK.html"  class="active">Create New</a></li>
+         <li><a href="#">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="listContent col-md-10">
+    <h1 style="text-align: center;">Form Penerimaan Karyawan</h1>
+      <form method="POST" action="">
+        <div class="form-group">
+          
+          <label for="pos">Departemen Pemohon:</label>
+            <select class="form-control" id="pos">
+              <option>Department 1</option>
+              <option>Department 2</option>
+              <option>Department 3</option>
+            </select>
+          <br/>
+        
+        <label for="pos">Jabatan Pemohon:</label>
+            <select class="form-control" id="pos">
+              <option>Jabatan</option>
+            </select>
+          <br/>
+        
+        <label for="personNeeded">Posisi atau jumlah</label>
+        <input type="number" id="personNeeded" class="form-control"/>
+        <br/>
+
+        <label for="">Tanggal Dibutuhkan</label>
+        <input type="date" id="" class="form-control"/>
+        <br/>
+
+        <label>Alasan</label>
+         <select class="form-control" id="">
+              <option>Pemegang Jabatan terdahulu Resign</option>
+              <option>Pemegang Jabatan terdahulu dimutasi/promosi</option>
+              <option>Penambahan</option>
+            </select>
+          <br/>
+
+       <label>Kesesuaian dengan MPP</label>
+         <select class="form-control" id="">
+              <option>Sesuai</option>
+              <option>Tidak sesuai</option>
+            </select>
+          <br/>
+
+        <label for="education">Status Karyawan:</label>
+            <select class="form-control" id="education">
+              <option>GDN</option>
+              <option>Pemborong Kerja</option>
+            </select>
+          <br/>
+
+        <label>Pendidikan</label>
+         <select class="form-control" id="">
+              <option>SMA</option>
+              <option>S1</option>
+              <option>S2</option>
+              <option>S3</option>
+            </select>
+          <br/>
+
+         <label>Pengalaman Bekerja</label>
+         <select class="form-control" id="">
+              <option>Fresh Graduate</option>
+              <option>Pengalaman 1-3 Tahun</option>
+              <option>Pengalaman > 5 Tahun</option>
+              <option>Pengalaman > 10 Tahun</option>
+            </select>
+          <br/>
+
+        <label>Skill/Knowledge</label>
+        <textarea name="Text1" cols="140" rows="8" class="form-control" ></textarea>
+         <br/>
+      
+      <button type="submit" class="btn btn-primary" name="">Send FPK</button>
+      
+      <button type="reset" class="btn btn-warning" name="">Reset</button>
+
+
+      </div>
+      </form>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/vendor/angular.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/apps/app.js"></script>
+</html>

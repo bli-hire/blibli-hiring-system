@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html ng-app="InternalApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:-9px; margin-bottom:-20px;">
+      <div class="container-fullwidth well well-sm" style="margin-bottom: -20px;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./dashboard-department_MPP.html"><img class="newLogo" src="images/New-Blibli-Logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="./dashboard-department_MPP.html" class="active">MPP</a></li>
+            <li><a href="./dashboard-department_FPK.html">FPK</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#user">User</a></li>
+            <li><a href="#contact">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="col-md-2">
+      <div class="navbar navbar-inverse navbar-fixed-left">
+        <ul class="nav navbar-nav">
+         <li><a href="./dashboard-department_MPP.html">Dasboard</a></li>
+         <li><a href="./dashboard-department_newMPP.html"  class="active">Create New</a></li>
+         <li><a href="#">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="listContent col-md-10">
+    <h1 style="text-align: center;">Man Powering Plant Form</h1>
+      <form method="POST" action="">
+        <div class="form-group">
+          <label for="pos">Position (select one):</label>
+            <select class="form-control" id="pos">
+              <option>Senior Development Engineer</option>
+              <option>Junior Development Engineer</option>
+              <option>Mobile Development Engineer</option>
+            </select>
+          <br/>
+        
+        
+        <label for="personNeeded">Number of Person(s)</label><br/>
+        <input type="number" id="personNeeded" class="form-control"/>
+        <br/>
+
+        <label>Comment Section</label>
+        <textarea name="Text1" cols="140" rows="8" class="form-control" ></textarea>
+         <br/>
+
+        <label>Reason</label>
+        <textarea name="Text1" cols="140" rows="8" class="form-control" ></textarea>
+        <br/>
+
+        <label for="education">Position (select one):</label>
+            <select class="form-control" id="education">
+              <option>Bacheloor Degree</option>
+              <option>Master Degree</option>
+            </select>
+          <br/>
+
+        <label>Experience</label>
+        <textarea name="Text1" cols="140" rows="8" class="form-control" ></textarea>
+         <br/>
+
+        <label>Knowledge Skill</label>
+        <textarea name="Text1" cols="140" rows="8" class="form-control" ></textarea>
+         <br/>
+
+         <label for="employeeStatus">Employee Status(GDN or Outsource):</label>
+            <select class="form-control" id="employeeStatus">
+              <option>Bacheloor Degree</option>
+              <option>Master Degree</option>
+            </select>
+          <br/>
+
+      <label for="employeeStatus">Expected to join:</label>
+      <table class="table">
+        <tr>
+          <th>January</th>
+          <th>February</th>
+          <th>March</th>
+          <th>April</th>
+          <th>May</th>
+          <th>June</th>
+          <th>July</th>
+          <th>August</th>
+          <th>September</th>
+          <th>October</th>
+          <th>November</th>
+          <th>December</th>
+        </tr>
+        <tr>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+          <td><input type="number" class="form-control"/></td>
+        </tr>
+      </table>
+
+      <label for="">PC/Laptop (number)</label>
+      <input type="number" class="form-control"/>
+      <br/>
+
+      <label for="">Spesification</label>
+      <textarea name="Text1" cols="140" rows="8" class="form-control" ></textarea>
+      <br/>
+      
+      <button type="submit" class="btn btn-primary" name="">Send MPP</button>
+      
+      <button type="reset" class="btn btn-warning" name="">Reset</button>
+
+
+      </div>
+      </form>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/vendor/angular.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/apps/app.js"></script>
+</html>
