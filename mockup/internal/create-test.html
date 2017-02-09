@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html ng-app="InternalApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:-9px; margin-bottom:-20px;">
+      <div class="container-fullwidth well well-sm" style="margin-bottom: -20px;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#myPage"><img class="newLogo" src="images/New-Blibli-Logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#contact">MPP</a></li>
+            <li><a href="#contact">FPK</a></li>
+            <li class="dropdown">
+              <a href="#contact" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Online Test<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li ng-class= "{ active: isSelected('browse-problems') }">
+                  <a href="#" ng-click="selectTab('browse-problems')">Browse Problems</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li ng-class= "{ active: isSelected('add-problems') }">
+                  <a href="#" ng-click="selectTab('add-problems')">Add Problems</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li ng-class= "{ active: isSelected('create-test') }">
+                  <a href="#" ng-click="selectTab('create-test')">Create Test</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#contact">Logout</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+    <div class="container pull-left">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="navbar navbar-inverse navbar-fixed-left">
+            <ul class="nav navbar-nav">
+             <li><a href="#">Marketing</a></li>
+             <li><a href="#">Trade Partnership</a></li>
+             <li><a href="#">Operation</a></li>
+             <li><a href="#">Technology</a></li>
+             <li><a href="#">Business Development</a></li>
+             <li><a href="#">Finance</a></li>
+             <li><a href="#">Human Resource</a></li>
+             <li><a href="#">Project Management</a></li>
+             <li><a href="#">Product Management</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <br>
+          <br>
+          <h1>Create Test</h1>
+          <section>
+            <div class="wizard">
+              <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <h1>1</h1>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <h1>2</h1>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <h1>3</h1>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <!-- <i class="glyphicon glyphicon-pencil"></i> -->
+                                <h1>4</h1>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+
+              <form role="form">
+                <div class="tab-content">
+                  <div class="tab-pane active" role="tabpanel" id="step1">
+                      <h3>Step 1</h3>
+                      <form class="form-horizontal">
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="application-id">Application Id:</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="application-id" placeholder="Application id">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="name">Name:</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="name" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="division">Division:</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="division" placeholder="Division">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="job">Job:</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="job" placeholder="job">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+                            <a href="#" class="btn btn-default">Add More</a>
+                          </div>
+                        </div>
+
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+                      </form>
+                  </div>
+                  <div class="tab-pane" role="tabpanel" id="step2">
+                      <h3>Step 2</h3>
+                      <p>This is step 2</p>
+                      <ul class="list-inline pull-right">
+                          <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                          <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                      </ul>
+                  </div>
+                  <div class="tab-pane" role="tabpanel" id="step3">
+                      <h3>Step 3</h3>
+                      <p>This is step 3</p>
+                      <ul class="list-inline pull-right">
+                          <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                          <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                          <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                      </ul>
+                  </div>
+                  <div class="tab-pane" role="tabpanel" id="complete">
+                      <h3>Complete</h3>
+                      <p>You have successfully completed all steps.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+              </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+  <script type="text/javascript" src="js/vendor/angular.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/apps/app.js"></script>
+  <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+
+  <script type="text/javascript" src="js/apps/controller/MockupController.js">
+
+  </script>
+</html>
