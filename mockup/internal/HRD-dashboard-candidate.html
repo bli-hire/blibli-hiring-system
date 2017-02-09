@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="InternalApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:-9px; margin-bottom:-20px;">
+      <div class="container-fullwidth well well-sm" style="margin-bottom: -20px;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./dashboard-ceo.html"><img class="newLogo" src="images/New-Blibli-Logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="./HRD-dashboard-requestedFPK.html">Requested FPK</a></li>
+            <li><a href="./HRD-dashboard-candidate.html" class="active">Candidate</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#user">HR-User</a></li>
+            <li><a href="#contact">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="col-md-2">
+      <div class="navbar navbar-inverse navbar-fixed-left">
+        <ul class="nav navbar-nav">
+         <li class="active"><a href="#">Marketing</a></li>
+         <li><a href="#">Trade Partnership</a></li>
+         <li><a href="#">Operation</a></li>
+         <li><a href="#">Technology</a></li>
+         <li><a href="#">Business Development</a></li>
+         <li><a href="#">Finance</a></li>
+         <li><a href="#">Human Resource</a></li>
+         <li><a href="#">Project Management</a></li>
+         <li><a href="#">Product Management</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="listContent col-md-10 ">
+    <h2>List Of Candidates</h2>
+    <table class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>UID</th>
+          <th>Nama Lengkap</th>
+          <th>Posisi</th>
+          <th style="text-align:center;" colspan="4">Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <form>
+          <tr>
+            <td>17010101</td>
+            <td>Alfons Manggala</td>
+            <td>Jr. Accounting</td>
+            <td style="text-align:center;"><input type="button" value="View CV" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Hiring Process" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Score" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Mutasi" class="btn btn-primary"/></td>
+            
+          </tr>
+          <tr>
+            <td>17020101</td>
+            <td>Alfonsus M</td>
+            <td>Administrator</td>
+            <td style="text-align:center;"><input type="button" value="View CV" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Hiring Process" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Score" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Mutasi" class="btn btn-primary"/></td>
+          </tr>
+          <tr>
+            <td>17010102</td>
+            <td>Alfons. Mang.</td>
+            <td>Operation</td>
+            <td style="text-align:center;"><input type="button" value="View CV" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Hiring Process" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Score" class="btn btn-primary"/></td>
+            <td style="text-align:center;"><input type="button" value="Mutasi" class="btn btn-primary"/></td>
+          </tr>
+        </form>
+      </tbody>
+    </table>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/vendor/angular.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/apps/app.js"></script>
+</html>
