@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html ng-app="InternalApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" ng-controller="DefaultController">
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:-9px; margin-bottom:-20px;">
+      <div class="container-fullwidth well well-sm" style="margin-bottom: -20px;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#myPage"><img class="newLogo" src="images/New-Blibli-Logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#contact">MPP</a></li>
+            <li><a href="#contact">FPK</a></li>
+            <li class="dropdown">
+              <a href="#contact" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Online Test<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li ng-class= "{ active: isSelected('browse-problems') }">
+                  <a href="#" ng-click="selectTab('browse-problems')">Browse Problems</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li ng-class= "{ active: isSelected('add-problems') }">
+                  <a href="#" ng-click="selectTab('add-problems')">Add Problems</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li ng-class= "{ active: isSelected('create-test') }">
+                  <a href="#" ng-click="selectTab('create-test')">Create Test</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#contact">Logout</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+    <div class="container pull-left">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="navbar navbar-inverse navbar-fixed-left">
+            <ul class="nav navbar-nav">
+             <li><a href="#">Marketing</a></li>
+             <li><a href="#">Trade Partnership</a></li>
+             <li><a href="#">Operation</a></li>
+             <li><a href="#">Technology</a></li>
+             <li><a href="#">Business Development</a></li>
+             <li><a href="#">Finance</a></li>
+             <li><a href="#">Human Resource</a></li>
+             <li><a href="#">Project Management</a></li>
+             <li><a href="#">Product Management</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <br>
+          <br>
+          <br>
+          <h1>Add Problem</h1>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="keyword">Keyword :</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="keyword" placeholder="Keyword">
+                <a href="#" class="btn btn-primary">Add</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="category">Select Category:</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="sel2">
+                  <option value="" disabled selected>Category</option>
+                  <option value="cat1">Category 1</option>
+                  <option value="cat2">Category 2</option>
+                  <option value="cat3">Category 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="keyword">Keyword :</label>
+              <div class="col-sm-10">
+                <div class="btn btn-default">Keyword 1 &nbsp;<a class="btn btn-xs btn-danger pull-right">x</a></div>
+                <div class="btn btn-default">Keyword 2 &nbsp;<a class="btn btn-xs btn-danger pull-right">x</a></div>
+                <div class="btn btn-default">Keyword 3 &nbsp;<a class="btn btn-xs btn-danger pull-right">x</a></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="difficulty">Difficulty:</label>
+              <div class="col-sm-10">
+                  <select class="form-control" id="difficulty">
+                    <option value="" disabled selected>Difficulty</option>
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option value="">Hard</option>
+                  </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+                <a href="#" class="btn btn-warning">Set</a>
+                <a href="#" class="btn btn-danger">Clear</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="problem1">Problem 1:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="problem1"></textarea>
+                <a class="btn btn-xs btn-danger">Delete</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="problem2">Problem 2:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="problem2"></textarea>
+                <a class="btn btn-xs btn-danger">Delete</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+                <a href="#" class="btn btn-default">Add More</a>
+              </div>
+            </div>
+            <div class="form-group pull-right">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </body>
+
+  <script type="text/javascript" src="js/vendor/angular.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/vendor/angular-ui-router.js"></script>
+  <script type="text/javascript" src="js/apps/app.js"></script>
+  <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+</html>
